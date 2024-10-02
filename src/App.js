@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
   const name = "marco";
@@ -9,7 +10,7 @@ function App() {
     return value1 + value2;
   }
 
-  const url = "https://via.placeholder.com/500";
+  const url = "https://via.placeholder.com/200";
   return (
     <div className="App">
       <h1>Testando o JSX</h1>
@@ -20,6 +21,7 @@ function App() {
 
       <h2>Colocando uma imagem dinamica</h2>
       <img src={url} alt="minha imagem"/>
+      <HelloWorld />
     </div>
   );
 }
