@@ -1,8 +1,10 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = "marco";
+  const name = "renatinha do grau";
 
   const upper_name = name.toUpperCase();
 
@@ -15,13 +17,16 @@ function App() {
     <div className="App">
       <h1>Testando o JSX</h1>
 
-      <h3>Olá {upper_name}!</h3>
-
       <p>Fazendo uma função de soma - Resultado: {soma(6,9)}</p>
 
       <h2>Colocando uma imagem dinamica</h2>
       <img src={url} alt="minha imagem"/>
       <HelloWorld />
+
+      <SayMyName nome="Marco"/>
+      <SayMyName nome="Roberto"/>
+      <SayMyName nome={upper_name}/>
+      <Pessoa nome={upper_name} idade="21" profissao="Programador" foto={url}/>
     </div>
   );
 }
