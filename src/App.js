@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = "marco";
+
+  const upper_name = name.toUpperCase();
+
+  function soma(value1, value2) {
+    return value1 + value2;
+  }
+
+  const url = "https://via.placeholder.com/500";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Testando o JSX</h1>
+
+      <h3>Olá {upper_name}!</h3>
+
+      <p>Fazendo uma função de soma - Resultado: {soma(6,9)}</p>
+
+      <h2>Colocando uma imagem dinamica</h2>
+      <img src={url} alt="minha imagem"/>
     </div>
   );
 }
