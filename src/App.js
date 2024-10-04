@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Lista from './components/Lista';
+import Form from './components/Form';
 
 function App() {
   const name = "renatinha do grau";
@@ -28,6 +29,7 @@ function App() {
       <SayMyName nome="Roberto"/>
       <SayMyName nome={upper_name}/>
       <Lista />
+      <Form />
       <Pessoa nome={upper_name} idade="21" profissao="Programador" foto={url}/>
     </div>
   );

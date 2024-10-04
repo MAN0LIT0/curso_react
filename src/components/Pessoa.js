@@ -1,3 +1,4 @@
+import Botao from "./Botao"
 import styles from "./Pessoa.module.css"
 
 function Pessoa({nome, idade, profissao, foto}) {
@@ -8,6 +9,9 @@ function Pessoa({nome, idade, profissao, foto}) {
                 <h4 className={styles.PessoaH4}>Nome: {nome}</h4>
                 <p className={styles.PessoaP}>Idade: {idade}</p>
                 <p className={styles.PessoaP}>Profissão: {profissao}</p>
+
+                <Botao numero={1}/>
+                <Botao numero={2}/>
             </div>
         </div>   
     )
