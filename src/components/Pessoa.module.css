@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.PessoaTamanho {
+    margin: auto;
+    width: 50%;
+}
+.PessoaDiv {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.PessoaH4 {
+    color: #bbb;
+    background-color: bisque;
+    padding: 5px 0px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.PessoaP {
+    color: #000c7a;
+    background-color: rgb(219, 248, 195);
+    padding: 5px 0px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
